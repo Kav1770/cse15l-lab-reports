@@ -16,5 +16,8 @@ Link to the site:[Link](https://github.com/Kav1770/cse15l-lab-reports/edit/main/
 
 Why are we here? `Just to suffer`
 
- # some code
+```
+# code block
  System.out.println("Hello!");
+```
+
