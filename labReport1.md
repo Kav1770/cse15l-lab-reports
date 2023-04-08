@@ -58,10 +58,11 @@ ls <directory>
 ```
   
 For example:
-![Image](https://user-images.githubusercontent.com/126924884/230695888-a4719c2f-0d89-400c-8caa-956255fd7be1.png)
-In this example, I checked the path using pwd then I checked what was in this folder and it was perl15 then I used ls – lat and ls –a. Then I went into perl5 with cd and I tried accessing a directory called "Documents" but that directory did not exist at the time so kept getting no such file or directory. Then I used mkdir Documents and created a documents directory in perl15 and went into documents using cd and checked the path.
+![Image](https://user-images.githubusercontent.com/126924884/230696202-c817975a-624a-4e26-a9ab-74d6a069ba53.png)
+In this example, I checked the path using pwd then I checked what was in this folder and it only showed perl15 then I used ls – lat and ls –a. Then I went into perl5 with cd and I tried accessing a directory called "Documents" but that directory did not exist at the time so kept getting no such file or directory. I also missused mkdir and used it by itself and got an error. Then I used mkdir Documents and created a documents directory in perl15 and went into documents using cd and checked the path.
 
-  
+
+
 To exist out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above. 
 
 
