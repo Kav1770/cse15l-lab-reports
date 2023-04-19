@@ -12,7 +12,13 @@ At this point you have succesfully installed VScode.
 
 First you will need to know your account for CSE 15L at the following: [Link](https://sdacs.ucsd.edu/~icc/index.php). Now, you should see a screen that says "Account Lookup" at the top. ![Image](https://user-images.githubusercontent.com/126924884/230638434-9ad063dd-b6f7-4e87-b827-693171a78478.png)
 
-For the box titled "Username", put your student Username for TritonLink. For the box titled "Student ID", put your PID. Then hit submit. You should see a screen titled "Account Lookup Results" and under "Additional Accounts", you should see a button called "cs15lsp23zz" (where zz is different for each student). Now copy "cs15lsp23zz" and click the button. There should be a yellow box with a blue link called "Global Password Change Tool" and click the link. Now you should see a page title "Global Password Reset." Under "Student, AX, or Course-Specific Student Accounts", click the "Proceed to the Password Change Tool" link. Now in the gray box, in the box under "Enter your username:" type in the username that you copied(AKA "cs15lsp23zz") and push continue. Then push "I want to reset my course-specific account password" link and authenticate with Duo. WHen it asks to confirm your email address click the "yes" button. Then you should see a screen titled "Thank you. We sent you an email." In your email, there should be an email about the password reset. Click the link that says "UC San Diego Password reset page." Then enter your new password and click change your password.
+1. For the box titled **"Username"**, put your student Username for TritonLink. For the box titled **"Student ID"**, put your PID. Then hit submit. 
+2. You should see a screen titled **"Account Lookup Results"** and under **"Additional Accounts"**, you should see a button called **"cs15lsp23zz"** (where zz is different for each student). Now copy **"cs15lsp23zz"** and click the button. 
+3. There should be a yellow box with a blue link called **"Global Password Change Tool"** and click the link. 
+4. Now you should see a page title **"Global Password Reset."** Under "Student, AX, or Course-Specific Student Accounts", click the **"Proceed to the Password Change Tool" link**. 
+5. Now in the gray box, in the box under "Enter your username:" **type in the username that you copied(AKA "cs15lsp23zz")** and push continue. 
+6. Then push **"I want to reset my course-specific account password" link** and authenticate with Duo. When it asks to confirm your email address click the "yes" button. Then you should see a screen titled "Thank you. We sent you an email." 
+7. In your email, there should be an email about the password reset. Click the link that says **"UC San Diego Password reset page."** Then enter your new password and click change your password.
 
 **Connecting**
 
@@ -46,11 +52,13 @@ Now we can start trying some commands on the remote server!
 
 ## Trying Some Commands
 Here are some commands that you can try:
+```
 * pwd - will print the current working directory
 * cd <path> - will change the current working directory
 * cat <path> - will print the contents of the file of the path
 * ls <path> - will list the folders on the current path
 * mkdir "Name" - will create a new directory using "Name" at the current working directory
+```
   
 Some more commands which you can try are:
 ```
@@ -62,10 +70,52 @@ ls <directory>
   
 For example:
 ![Image](https://user-images.githubusercontent.com/126924884/230696202-c817975a-624a-4e26-a9ab-74d6a069ba53.png)
-In this example, I checked the path using pwd then I checked what was in this folder and it only showed perl15 then I used ls – lat and ls –a. Then I went into perl5 with cd and I tried accessing a directory called "Documents" but that directory did not exist at the time so kept getting no such file or directory. I also missused mkdir and used it by itself and got an error. Then I used mkdir Documents and created a documents directory in perl15 and went into documents using cd and checked the path.
+In this example, I checked the path:
+```
+$ pwd
+/home/linux/ieng6/cs15lsp23/cs15lsp23hk
+```
 
+then I checked what was in this folder:
+```
+$ ls
+perl5 
+```
+then  I used to ls – lat and ls –a to show all of the files:
+```
+$ ls – lat
+$ ls –a 
+```
+Then I went into perl5 with cd:
+```
+$ cd perl5
+```
+Then I checked the ls of the outer file and the pwd:
+```
+$ ls ..
+perl15
+$ pwd
+/home/linux/ieng6/cs15lsp23/cs15lsp23hk/perl15
+```
+Then I tried accessing a directory called "Documents" by doing:
+```
+$ cd Documents
+```
+but that directory did not exist at the time so I kept getting **no such file or directory**. 
 
+I then tried using mkdir to make  Documents, but at first, I missused mkdir and used it by itself and got an error. Then I used mkdir Documents and created a documents directory in perl15 and went into documents using cd and checked the path.
+```
+$ mkdir 
+ mikdir missing operand
+ Try 'mkdir --help' for more information
+$ mkdir Documents
+$ ls 
+Documents
+$ cd Documents
+$ pwd Documents
+/home/linux/ieng6/cs15lsp23/cs15lsp23hk/perl15/Documents
+```
 
-To exist out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above. 
+**To exist out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above.** 
 
 
