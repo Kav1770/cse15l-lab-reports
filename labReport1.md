@@ -41,13 +41,12 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 
 ```
-This is a normal. Types "yes" and press the return or enter key on your keyboard.
+This is a normal. Type "yes" and press the return or enter key on your keyboard.
 Next it will ask for your password. Type in your password.
 **Note: The password will not show as your are typing it so do not be alarmed**
 
 If this program worked succesfully your should see something like the following:
 ![Image](https://user-images.githubusercontent.com/126924884/230695410-0cc36c98-12d6-4b9c-b310-69d8fe90599d.png)
-
 Now we can start trying some commands on the remote server!
 
 ## Trying Some Commands
@@ -90,7 +89,6 @@ $ ls – lat
 $ ls –a 
 ```
 The functionality of these commands is displayed by the picture above but more specifically, ls –a prints all of the files (including any hidden files) and ls – lat prints all of these files as well along with some information about those files. 
-
 
 4. Next I went into *perl5* with **cd** and checked the ls of the outer folder that I was just in and the pathway using **ls..** and **pwd**:
 ```
