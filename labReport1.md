@@ -70,18 +70,18 @@ ls <directory>
   
 For example:
 ![Image](https://user-images.githubusercontent.com/126924884/230696202-c817975a-624a-4e26-a9ab-74d6a069ba53.png)
-In this example, I checked the path:
+In this example, I checked the path using pwd and it returned the pathway on the remote computer:
 ```
 $ pwd
 /home/linux/ieng6/cs15lsp23/cs15lsp23hk
 ```
 
-then I checked what was in this folder:
+Then I checked what was in this folder that I could directly access:
 ```
 $ ls
 perl5 
 ```
-then  I used to ls – lat and ls –a to show all of the files:
+Then I used to ls – lat and ls –a to show all of the files:
 ```
 $ ls – lat
 $ ls –a 
@@ -90,7 +90,7 @@ Then I went into perl5 with cd:
 ```
 $ cd perl5
 ```
-Then I checked the ls of the outer file and the pwd:
+Then I checked the ls of the outer directory and the pathway using ls.. and pwd:
 ```
 $ ls ..
 perl15
