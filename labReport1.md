@@ -90,7 +90,7 @@ Then I went into perl5 with cd:
 ```
 $ cd perl5
 ```
-Then I checked the ls of the outer directory and the pathway using ls.. and pwd:
+Then I checked the ls of the outer folder that I was just in and the pathway using ls.. and pwd:
 ```
 $ ls ..
 perl15
