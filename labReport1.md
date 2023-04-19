@@ -70,24 +70,29 @@ ls <directory>
   
 For example:
 ![Image](https://user-images.githubusercontent.com/126924884/230696202-c817975a-624a-4e26-a9ab-74d6a069ba53.png)
-In this example, I checked the path using **pwd** and it returned the pathway on the remote computer:
+**Note: I will be using $ to denote a terminal command so anything that does not have a '$' at the beginnning is printed by the computer. Also do not include $ in the terminal code.**
+
+1. In this example, I checked the path using **pwd** and it returned the pathway on the remote computer:
 ```
 $ pwd
 /home/linux/ieng6/cs15lsp23/cs15lsp23hk
 ```
 
-Then I checked what was in this folder using **ls**:
+2. Then I checked what was in this folder using **ls**:
 ```
 $ ls
 perl5 
 ```
-Then I used **ls – lat** and **ls –a** to look at more files as displayed by the picture above:
+
+3. Then I used **ls – lat** and **ls –a** to look at the all files (including any hidden files) in the following way:
 ```
 $ ls – lat
 $ ls –a 
 ```
+The functionality of these commands is displayed by the picture above but more specifically, ls –a prints all of the files (including any hidden files) and ls – lat prints all of these files as well along with some information about those files. 
 
-Then I went into *perl5* with **cd** and checked the ls of the outer folder that I was just in and the pathway using **ls..** and **pwd**:
+
+4. Next I went into *perl5* with **cd** and checked the ls of the outer folder that I was just in and the pathway using **ls..** and **pwd**:
 ```
 $ cd perl5
 $ ls ..
@@ -95,13 +100,13 @@ perl15
 $ pwd
 /home/linux/ieng6/cs15lsp23/cs15lsp23hk/perl15
 ```
-Then I tried accessing a directory called "Documents" by doing:
+5. Then I tried accessing a directory called "Documents" by using cd in the following way: 
 ```
 $ cd Documents
-```
-but that directory did not exist at the time so I kept getting **no such file or directory**. 
+``` 
+but that directory did not exist at the time so I kept getting **no such file or directory**.
 
-I then tried using mkdir to make the Documents folder, but at first, I missused mkdir and used it by itself which resulted in an error. Then I used **mkdir Documents** and created a documents directory in perl15 and went into documents using **cd** and checked the path.
+6. I then tried using mkdir to make the Documents folder, but at first, I missused mkdir and used it by itself which resulted in an error. Then I used **mkdir Documents** and created a documents directory in perl15 and went into documents using **cd** and checked the path.
 ```
 $ mkdir 
  mikdir missing operand
