@@ -1,5 +1,5 @@
 # Lab Report 2
-## Part 1
+## Part 1 - String Server 
 The following is the code in my StringServer.java file.
 ```
 import java.io.IOException;
@@ -65,11 +65,12 @@ In this case, Since we do not have a "#" in the url, the query is "s=hello" whic
 
 ![Image](https://user-images.githubusercontent.com/126924884/233498282-c7c46a81-76cf-4d84-9e73-f286c08d22c7.png)
 Now we have input the following URL into handleRequest *localhost:4000/add-message?s=how%20are%20you*.
+
 **Note: The %20 are substituting for spaces so even though localhost:4000/add-message?s=how are you' was input, it turned into localhost:4000/add-message?s=how%20are%20you, so I will use %20 and spaces interchangeably.***
 
 The path still contains "add-message", so the program will split the query("s = how%20are%20you") into "s", "how are you" and save it into **the variable query**. Since the first element is "s", the second element is added along with a "\n" to strs. 
 However, the **server has not been reset** so strs still contains "hello\n" from the last URL, so strs becomes "hello\nhow are you\n" which when returned results hello and how are you appearing on the server on different lines.  
 
-#Part 2
+## Part 2
 
 
