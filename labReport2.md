@@ -115,7 +115,7 @@ However, the method fails when the array has any elements. This next JUnit test 
 The following is the error message of after the method failed the test. This is the symptom of the bug.
 ![Image](https://user-images.githubusercontent.com/126924884/233515822-441cac35-9551-492e-a106-696aba97d145.png)
 
-The bug is caused by the fact that arr and newArray are switched and newArray should be returned. This bug caused the newly-created array(newArray) to copy its values into arr in reversed order, thus causing arr to have a list of 0s. This can be fixed by switching newArray and arr such that arr is copying its values in reversed order into newArray and newArray is returned. The following code block demonstrates this:
+The bug is caused by the fact that **arr and newArray are switched and newArray should be returned**. This bug caused the newly-created array(newArray) to copy its values into arr in reversed order, thus causing arr to have a list of 0s. This can be fixed by **switching newArray and arr** such that arr is copying its values in reversed order into newArray and making sure that **newArray is returned**. The following code block demonstrates this:
 
 
 ```
@@ -132,4 +132,7 @@ When the above code runs, the JUnit test runs and passes the test.
 ![Image](https://user-images.githubusercontent.com/126924884/233516498-6173c011-cdf7-4dd8-9963-be245b7bb99d.png)
 
 **To exit out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above.** 
+
+## Part 3 - Learning 
+I learned about **Github Desktop** these past 2 weeks. I had heard about Github but I had not heard about Github Desktop and I think it is very cool how it shows you the changes you made to the Github code. I also think its very useful because it allows you to work on your code in VScode without having to make a copy of it. This made it a lot easier to push changes to the Github repository without the tediousness of trying to get into your Github repo and copying and pasting in every single change that you made. 
 
