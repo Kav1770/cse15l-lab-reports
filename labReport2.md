@@ -75,6 +75,61 @@ However, the **server has not been reset** so strs still contains "hello\n" from
 The following code is part of ArrayExamples and is meant to take an input array denoted by **arr** and return a new array with all of the elements from the input array but in reverse order.
 
 ```
-oilknjhjvgcf
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
 ```
+However, the above code only works for certain cases. 
+For example, it works in the case that the given array list has 0 elements. The following JUnit code demonstrates this: 
+```
+  import static org.junit.Assert.*;
+  import org.junit.*;
+  public class ArrayTests {
+  @Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+}
+```
+And when compiled and run, that test will pass and will show the following code:
+![Image](https://user-images.githubusercontent.com/126924884/233515074-ea412b0c-5ccc-4991-a3e5-3236138dbe54.png)
+
+However, the method fails when the array has any elements. This next JUnit test has 5 elements and fails. This is the failure-inducing input.
+
+```
+  import static org.junit.Assert.*;
+  import org.junit.*;
+  public class ArrayTests {
+  @Test
+  public void testReversed() {
+    int[] i = {5, 4, 3, 2, 1};
+    assertArrayEquals(new int[]{1, 2, 3, 4, 5}, ArrayExamples.reversed(i));
+  }
+}
+```
+The following is the error message of after the method failed the test. This is the symptom of the bug.
+![Image](https://user-images.githubusercontent.com/126924884/233515822-441cac35-9551-492e-a106-696aba97d145.png)
+
+The bug is caused by the fact that arr and newArray are switched and newArray should be returned. This bug caused the newly-created array(newArray) to copy its values into arr in reversed order, thus causing arr to have a list of 0s. This can be fixed by switching newArray and arr such that arr is copying its values in reversed order into newArray and newArray is returned. The following code block demonstrates this:
+
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+
+```
+When the above code runs, the JUnit test runs and passes the test.
+![Image](https://user-images.githubusercontent.com/126924884/233516498-6173c011-cdf7-4dd8-9963-be245b7bb99d.png)
+
+**To exit out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above.** 
 
