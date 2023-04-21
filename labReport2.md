@@ -129,7 +129,7 @@ The bug is caused by the fact that **arr and newArray are switched and newArray 
 
 ```
 When the above code runs, the JUnit test runs and passes the test.
-![Image](https://user-images.githubusercontent.com/126924884/233516498-6173c011-cdf7-4dd8-9963-be245b7bb99d.png)
+![Image](https://user-images.githubusercontent.com/126924884/233517771-c93c49b1-0505-4c69-9a3c-e81a75e7df5e.png)
 
 **To exit out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above.** 
 
