@@ -71,6 +71,10 @@ Now we have input the following URL into handleRequest *localhost:4000/add-messa
 The path still contains "add-message", so the program will split the query("s = how%20are%20you") into "s", "how are you" and save it into **the variable query**. Since the first element is "s", the second element is added along with a "\n" to strs. 
 However, the **server has not been reset** so strs still contains "hello\n" from the last URL, so strs becomes "hello\nhow are you\n" which when returned results hello and how are you appearing on the server on different lines.  
 
-## Part 2
+## Part 2 - Debugging 
+The following code is part of ArrayExamples and is meant to take an input array denoted by **arr** and return a new array with all of the elements from the input array but in reverse order.
 
+```
+oilknjhjvgcf
+```
 
