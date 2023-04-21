@@ -134,5 +134,5 @@ When the above code runs, the JUnit test runs and passes the test.
 **To exit out of the server you can use the command "exit" or just Ctrl-D or you can open a new terminal using the instructions above.** 
 
 ## Part 3 - Learning 
-I learned about **Github Desktop** these past 2 weeks. I had heard about Github but I had not heard about Github Desktop and I think it is very cool how it shows you the changes you made to the Github code. I also think its very useful because it allows you to work on your code in VScode without having to make a copy of it. This made it a lot easier to push changes to the Github repository without the tediousness of trying to get into your Github repo and copying and pasting in every single change that you made. 
+I learned about **Github Desktop** these past 2 weeks. I had heard about Github but I had not heard about Github Desktop and I think it is very cool how **it shows you the changes you made to the Github code**. I also think its very useful because **it allows you to work on your code in VScode without having to make a copy of the Github repository**. This made it a lot easier to push changes to the Github repository without the tediousness of trying to get into your Github repo and copying and pasting in every single change that you made. 
 
