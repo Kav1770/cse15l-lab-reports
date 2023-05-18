@@ -41,6 +41,9 @@ The above output only shows lowercase "humani".
 However, using grep-i shows both lowercase and uppercase versions of the string.
 ![Image](https://user-images.githubusercontent.com/126924884/236640867-5b95f3ec-0e5c-46c9-be23-6f626356cb7e.png)
 
+**Usecases:**
+This command could be used in cases where the programmer is uncertain if the string that they are looking for has uppercase characters and just wants to search for all cases in which a string occurs in a file. Another case maybe that the programmer is certain that there are uppercase and lowercase versions of the string that is being searched for, and wants to find all cases of the string regardless of the case. This command is useful in decreasing the amount of commands that the programmer has to use by making the search case insensitive. 
+
 Source for grep-i commands were the following links:
 * [Wikibooks](https://en.wikibooks.org/wiki/Grep)
 * [GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
@@ -49,7 +52,10 @@ Source for grep-i commands were the following links:
 
 grep -c only prints the count of lines that match a "string". For example, in a file with "apple" "banana" "ripe" on different lines. Calling grep -c on the string "a" would print 2. 
 
-However, when called directly on a directory it will print the count of the string for each .txt file.
+**Usecases:**
+This could be used if the programmer wants to know how many lines contain a certain string for each file in a directory without seeing all of the instances, so the programmer can specificially look in those files later on. Furthermore, the programmer may just want a count and not every single line that the string appears on as it can fill up the terminal very quickly. Ultimately this command allows the programmer to simplify the output of grep into a number rather than entire bodies of text.
+
+When called directly on a directory it will print the count of the string for each .txt file.
 ```
 $ grep -c "society" plos/*.txt
 ```
@@ -71,7 +77,10 @@ Source:
 
 **Does Not Match**
 
-grep -v will print out the lines that do not contain a "string"
+grep -v will print out the lines that do not contain a "string."
+
+**Usecases:**
+This can be useful if the programmer is looking for lines in a file that do not include a certain string. This can also be useful if the programmer is looking to see which file in a directory may not include a specific string and what line does not include that. Ultimately, this command is very useful to find parts of files that do not include a certain string.
 
 Looking specifically in plos/journal.pbio.0020156.txt, we can see which lines do not contain the string "a". 
 ```
